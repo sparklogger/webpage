@@ -658,6 +658,108 @@
   ::-webkit-scrollbar-track { background: var(--dark); }
   ::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 3px; }
 
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+
+    /* Nav */
+    nav {
+      padding: 1rem 1.5rem;
+    }
+    .nav-links {
+      gap: 1rem;
+    }
+    .nav-links li:not(:last-child) {
+      display: none;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 7rem 1.5rem 3rem;
+    }
+    .hero-logo {
+      width: 90px;
+      height: 90px;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .hero-btns {
+      flex-direction: column;
+      align-items: center;
+    }
+    .btn-primary, .btn-secondary {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    /* Stats bar */
+    .stats-bar {
+      padding: 1.5rem 1rem;
+      gap: 2rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 1.5rem;
+    }
+
+    /* Modes — single column */
+    .modes-grid {
+      grid-template-columns: 1fr;
+      margin-top: 1.5rem;
+    }
+
+    /* Features — single column */
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+
+    /* Categories */
+    .categories-section { padding: 4rem 0; }
+    .categories-inner { padding: 0 1.5rem; }
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Roadmap */
+    .roadmap-section { padding: 4rem 0; }
+    .roadmap-inner { padding: 0 1.5rem; }
+    .roadmap-list { max-width: 100%; }
+
+    /* CTA */
+    .cta-section { padding: 4rem 1.5rem; }
+
+    /* Footer */
+    footer {
+      padding: 1.5rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+
+    /* Divider */
+    .divider { margin: 0 1.5rem; }
+  }
+
+  /* Very small screens */
+  @media (max-width: 420px) {
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-badge {
+      font-size: 0.68rem;
+      padding: 0.3rem 0.75rem;
+    }
+    .hero-sub {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+    .stat-num {
+      font-size: 1.6rem;
+    }
+  }
+
 </style>
 </head>
 <body>
