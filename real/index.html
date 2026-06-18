@@ -179,7 +179,6 @@
     padding: 0.35rem 1rem;
     border-radius: 100px;
     margin-bottom: 2rem;
-    margin-left: 18%;
   }
 
   .hero-logo {
@@ -422,7 +421,7 @@
 
   .categories-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-top: 3rem;
   }
@@ -720,7 +719,7 @@
     .categories-section { padding: 4rem 0; }
     .categories-inner { padding: 0 1.5rem; }
     .categories-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     /* Roadmap */
@@ -851,7 +850,7 @@
       <div class="feat-icon-wrap">🚫</div>
       <div>
         <div class="feat-title">Disable Any Event</div>
-        <p class="feat-desc">Every event is optional. Open /logging to customize exactly what gets tracked — keep what matters, silence what doesn't.</p>
+        <p class="feat-desc">Don't want reaction logs cluttering things up? Turn off any individual event with a single command. Full control, no clutter.</p>
       </div>
     </div>
     <div class="feat-card">
@@ -894,19 +893,10 @@
        style="width:26px; height:26px; vertical-align:middle; margin:12px 0;">
         <div class="cat-name">Channel</div>
         <div class="cat-events">
-          <span class="event-tag">Channel Create</span>
-          <span class="event-tag">Channel Update</span>
-          <span class="event-tag">Channel Delete</span>
-          <span class="event-tag">Channel Permission</span>
-          <span class="event-tag">Thread Create</span>
-          <span class="event-tag">Thread Update</span>
-          <span class="event-tag">Thread Delete</span>
-          <span class="event-tag">Webhook Create</span>
-          <span class="event-tag">Webhook Update</span>
-          <span class="event-tag">Webhook Delete</span>
-          <span class="event-tag">Channel Follow</span>
-          <span class="event-tag">Followed Channel Update</span>
-          <span class="event-tag">Channel Unfollow</span>
+          <span class="event-tag">Channel Events</span>
+          <span class="event-tag">Thread Events</span>
+          <span class="event-tag">Webhook Events</span>
+          <span class="event-tag">Follow Events</span>
         </div>
       </div>
       <div class="cat-card">
@@ -930,21 +920,11 @@
        style="width:26px; height:26px; vertical-align:middle; margin:12px 0;">
         <div class="cat-name">Message</div>
         <div class="cat-events">
-          <span class="event-tag">Message Delete</span>
-          <span class="event-tag">Message Bulk Delete</span>
-          <span class="event-tag">Message Edit</span>
-          <span class="event-tag">Attachment Remove</span>
-          <span class="event-tag">Reaction Add</span>
-          <span class="event-tag">Reaction Remove</span>
-          <span class="event-tag">Reaction Emoji Clear</span>
-          <span class="event-tag">Reaction All Clear</span>
-          <span class="event-tag">Message Pin</span>
-          <span class="event-tag">Message Unpin</span>
-          <span class="event-tag">Poll Create</span>
-          <span class="event-tag">Poll Delete</span>
-          <span class="event-tag">Poll End</span>
-          <span class="event-tag">Poll Vote Add</span>
-          <span class="event-tag">Poll Vote Remove</span>
+          <span class="event-tag">Message Events</span>
+          <span class="event-tag">Attachment Removal</span>
+          <span class="event-tag">Reaction Events</span>
+          <span class="event-tag">Pin Events</span>
+          <span class="event-tag">Poll Events</span>
         </div>
       </div>
       <div class="cat-card">
@@ -957,12 +937,8 @@
           <span class="event-tag">Ban</span>
           <span class="event-tag">Unban</span>
           <span class="event-tag">Timeout</span>
-          <span class="event-tag">Timeout Remove</span>
           <span class="event-tag">Prune</span>
-          <span class="event-tag">Automod Create</span>
-          <span class="event-tag">Automod Update</span>
-          <span class="event-tag">Automod Delete</span>
-          <span class="event-tag">Automod Action</span>
+          <span class="event-tag">Automod Events</span>
         </div>
       </div>
       <div class="cat-card">
@@ -972,23 +948,11 @@
         <div class="cat-name">Server</div>
         <div class="cat-events">
           <span class="event-tag">Server Update</span>
-          <span class="event-tag">Emoji Create</span>
-          <span class="event-tag">Emoji Update</span>
-          <span class="event-tag">Emoji Delete</span>
-          <span class="event-tag">Sticker Create</span>
-          <span class="event-tag">Sticker Update</span>
-          <span class="event-tag">Sticker Delete</span>
-          <span class="event-tag">Soundboard Create</span>
-          <span class="event-tag">Soundboard Update</span>
-          <span class="event-tag">Soundboard Delete</span>
-          <span class="event-tag">Event Create</span>
-          <span class="event-tag">Event Update</span>
-          <span class="event-tag">Event Delete</span>
-          <span class="event-tag">Event Start</span>
-          <span class="event-tag">Event End</span>
-          <span class="event-tag">Invite Create</span>
-          <span class="event-tag">Invite Delete</span>
-          <span class="event-tag">Server Boost</span>
+          <span class="event-tag">Emoji Events</span>
+          <span class="event-tag">Sticker Events</span>
+          <span class="event-tag">Soundboard Events</span>
+          <span class="event-tag">Scheduled Events</span>
+          <span class="event-tag">Invite Events</span>
         </div>
       </div>
       <div class="cat-card">
@@ -1009,24 +973,11 @@
        style="width:26px; height:26px; vertical-align:middle; margin:12px 0;">
         <div class="cat-name">Voice</div>
         <div class="cat-events">
-          <span class="event-tag">Voice Join</span>
-          <span class="event-tag">Voice Leave</span>
-          <span class="event-tag">Voice Switch</span>
-          <span class="event-tag">Voice Move</span>
-          <span class="event-tag">Voice Disconnect</span>
-          <span class="event-tag">Voice Mute</span>
-          <span class="event-tag">Voice Unmute</span>
-          <span class="event-tag">Voice Deafen</span>
-          <span class="event-tag">Voice Undeafen</span>
-          <span class="event-tag">Stream Start</span>
-          <span class="event-tag">Stream End</span>
-          <span class="event-tag">Video Start</span>
-          <span class="event-tag">Video End</span>
-          <span class="event-tag">Stage Start</span>
-          <span class="event-tag">Stage Update</span>
-          <span class="event-tag">Stage End</span>
-          <span class="event-tag">Stage Speaker Invite</span>
-          <span class="event-tag">Stage New Invite</span>
+          <span class="event-tag">Voice Events</span>
+          <span class="event-tag">Voice Actions</span>
+          <span class="event-tag">Stream Events</span>
+          <span class="event-tag">Stage Events</span>
+          <span class="event-tag">Video Events</span>
         </div>
       </div>
       <div class="cat-card">
@@ -1036,7 +987,7 @@
         <div class="cat-name">Spark</div>
         <div class="cat-events">
           <span class="event-tag">Bot Updates</span>
-          <span class="event-tag">Config Update</span>
+          <span class="event-tag">Config Updates</span>
         </div>
       </div>
     </div>
